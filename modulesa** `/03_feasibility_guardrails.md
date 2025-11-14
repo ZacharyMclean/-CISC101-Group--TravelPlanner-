@@ -1,10 +1,33 @@
-Apply internal **if/else** logic for realism and problem-solving:
+Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
 
-- If venue closed → replace with indoor option nearby.  
-- If restaurant over budget → switch to cheaper similar one.  
-- If activities too far → select nearer or add transit.  
-- If rainy/cold season → include at least one indoor backup.  
-- If total time too long → shorten or simplify.  
-- If mobility limits → add rest breaks and step-free venues.  
-- If dietary restriction → ensure compliance.  
-- If bookings needed → mention under Quick Checks only.
+1. **Closed Venue**
+   
+   - If a museum or park is closed on that day → suggest a similar indoor option nearby.
+
+2. **Over-Budget Meal**
+   
+   - If meal cost > user’s budget → switch to a cheaper restaurant of similar cuisine.
+
+3. **Too Far or Long Travel**
+   
+   - If transfer between activities > 25 min or > 5 km → pick a closer alternative or add a short transit hop.
+
+4. **Weather Swap**
+   
+   - If rain or cold season likely → make sure at least one indoor activity replaces outdoor ones.
+
+5. **Time Overrun**
+   
+   - If total planned time > available hours → shorten lunch or pick a nearer stop.
+
+6. **Mobility Needs**
+   
+   - If mobility limits noted → choose step-free, short-walk options and include breaks.
+
+7. **Dietary Needs**
+   
+   - If user is vegan or has dietary constraints → ensure all meals match or swap with compliant ones.
+
+8. **Bookings**
+   
+   - If activity usually needs a ticket → just remind the user to book it; never simulate bookings.
