@@ -1,3 +1,6 @@
+Change Log (2025-11-13):
+– Added rule: prioritize walking options ≤ 25 minutes for users saying "short walks only".
+
 Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
 
 1. **Closed Venue**
@@ -23,6 +26,10 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 6. **Mobility Needs**
    
    - If mobility limits noted → choose step-free, short-walk options and include breaks.
+  
+   - Short-walk preference:
+- If the user explicitly requests "short walks only" or equivalent phrasing, prioritize activity pairs with walking time ≤ 25 minutes (or distance ≲ 2 km where walking times are not available). If no suitable options exist within that threshold, clearly present nearest alternatives and mark them with estimated walking times and an explicit note that they exceed the requested limit.
+
 
 7. **Dietary Needs**
    
