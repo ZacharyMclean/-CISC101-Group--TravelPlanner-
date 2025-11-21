@@ -1,3 +1,14 @@
+Change Log (2025-11-21)
+-Added rule: Missing or Unclear User Information
+
+If essential data is missing (e.g., budget, pace, dietary needs) → apply reasonable defaults such as mid-range budget, balanced pace, and standard restaurant options.
+
+-Modified rule: Weather swap
+If the season or destination suggests likely rain or cold (based on Intake) → include at least one indoor backup activity to keep the itinerary practical.
+
+-Modified rule: Dietary needs
+If the user has dietary restrictions → ensure all meals meet those requirements or replace meals with compliant alternatives.
+
 Change Log (2025-11-13):
 – Added rule: prioritize walking options ≤ 25 minutes for users saying "short walks only".
 
